@@ -1,0 +1,1 @@
+O serviço atexit() não é útil quando o programa é terminado de repente pois apenas é chamado quando o programa termina normalmente.
