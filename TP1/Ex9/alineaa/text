@@ -1,0 +1,2 @@
+Since you are in user mode u can use the command date and date -d but you can change the date .
+"date -s is a kernel mode function"
