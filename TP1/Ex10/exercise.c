@@ -18,3 +18,6 @@ int main()
     
     return 0;
 }
+
+
+//assim ou como eles querem e q corras o exec com "time ./exec"
