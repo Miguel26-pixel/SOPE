@@ -1,0 +1,4 @@
+Based on Processes: each process cant access the memory of another process so there will be a lot of less errors
+
+
+Based on Threads: each thread can access the memory of another thread but this easily can create some memory errors
