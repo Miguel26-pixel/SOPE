@@ -1,0 +1,14 @@
+Per process:
+    Adress space
+    Global variables
+    Open files
+    Child processes
+    Pending alarms
+    Signals and signal handlers
+    Accounting information
+
+Per thread:
+    Program counter
+    Registers
+    Stack 
+    State 

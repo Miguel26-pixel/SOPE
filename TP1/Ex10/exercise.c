@@ -4,17 +4,21 @@
 
 int main()
 {
-    clock_t begin = clock();
+    clock_t start, end;
+    struct tms t;
+    int long ticks = sysconf(_SC_CLK_TCK);
 
+    start = times(&t); /* início da medição de tempo */
 
-    for (int x=0;x < 100000;x++)
-    {
-        printf("%s","Hello world!\n");
-    }
+    for (int i = 0; i < 100000; i++)
+        printf("Hello world!\n");
 
-    clock_t end = clock();
-    double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-    printf("%.6f\n",time_spent);
+    end = times(&t); 
+
+    printf("Clock: %.5f sec\n",(double)(end - start) / ticks);
+    printf("User time: %.5f sec\n",(double)(t.tms_utime)/ticks);
+    printf("System time: %.5f sec\n",(double)(t.tms_stime)/ticks);
+    return 0;
     
     return 0;
 }
