@@ -1,0 +1,4 @@
+PIPE                                                     FIFO
+
+-PIPES doesn’t exist in the filesystem.                    -FIFO exists in the filesystem.
+-PIPES are unidirectional.                                -FIFO are bi-directional same fifo can be used for reading and writing.
