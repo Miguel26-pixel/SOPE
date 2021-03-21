@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
         exit(1);
     }
 
-    while ( (n1 = read(fd1, buffer, 1024)) > 0){
+    while ((n1 = read(fd1, buffer, 1024)) > 0){
         if(write(fd2, buffer, n1) != n1){
             perror("writing problem ");
             exit(3);
